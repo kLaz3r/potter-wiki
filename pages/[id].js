@@ -1,45 +1,7 @@
 import axios from 'axios';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import styled from 'styled-components';
-const Container = styled.div`
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`;
-const Wrapper = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 1200px;
-    width: 80vw;
-    height: 75vh;
-    margin: auto;
-`;
-const ImageWrapper = styled.div`
-    position: relative;
-    width: 50%;
-    img {
-        object-fit: cover;
-    }
-`;
-const Info = styled.div`
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 2rem;
-    font-weight: bold;
-    padding-left: 2rem;
-    .slice {
-        ul {
-            margin-left: 2rem;
-            font-size: 1.5rem;
-        }
-    }
-`;
+import styles from '../styles/[id].module.css';
 
 const Individ = ({ data }) => {
     const router = useRouter();
@@ -47,58 +9,58 @@ const Individ = ({ data }) => {
     const found = data && data.find((element) => element.id === id);
     console.log(found);
     return (
-        <Container>
-            <Wrapper>
-                <ImageWrapper>
+        <div className={styles.container}>
+            <div className={styles.wrapper}>
+                <div className={styles.imagewrapper}>
                     <Image src={found.image} fill></Image>
-                </ImageWrapper>
-                <Info>
-                    <div className='slice'>
+                </div>
+                <div className={styles.info}>
+                    <div className={styles.slice}>
                         Name: {found.name !== '' ? found.name : '-'}
                     </div>
-                    <div className='slice'>
+                    <div className={styles.slice}>
                         Actor: {found.actor !== '' ? found.actor : '-'}
                     </div>
-                    <div className='slice'>
+                    <div className={styles.slice}>
                         Ancestry: {found.ancestry !== '' ? found.ancestry : '-'}
                     </div>
-                    <div className='slice'>
+                    <div className={styles.slice}>
                         Date Of Birth:{' '}
                         {found.dateOfBirth !== '' ? found.dateOfBirth : '-'}
                     </div>
-                    <div className='slice'>
+                    <div className={styles.slice}>
                         Eye Colour:{' '}
                         {found.eyeColour !== '' ? found.eyeColour : '-'}
                     </div>
-                    <div className='slice'>
+                    <div className={styles.slice}>
                         Gender: {found.gender !== '' ? found.gender : '-'}
                     </div>
-                    <div className='slice'>
+                    <div className={styles.slice}>
                         Hair Colour:{' '}
                         {found.hairColour !== '' ? found.hairColour : '-'}
                     </div>
-                    <div className='slice'>
+                    <div className={styles.slice}>
                         Hogwarts Staff: {found.hogwartsStaff ? 'Yes' : 'No'}
                     </div>
-                    <div className='slice'>
+                    <div className={styles.slice}>
                         Hogwarts Student: {found.hogwartsStudent ? 'Yes' : 'No'}
                     </div>
-                    <div className='slice'>
+                    <div className={styles.slice}>
                         House: {found.house !== '' ? found.house : '-'}
                     </div>
-                    <div className='slice'>
+                    <div className={styles.slice}>
                         Patronous:{' '}
                         {found.patronous !== '' ? found.patronous : '-'}
                     </div>
-                    <div className='slice'>
+                    <div className={styles.slice}>
                         Species: {found.species !== '' ? found.species : '-'}
                     </div>
-                    <div className='slice'>
+                    <div className={styles.slice}>
                         Wizard: {found.wizard ? 'Yes' : 'No'}
                     </div>
-                    <div className='slice'>
+                    <div className={styles.slice}>
                         Wand:
-                        <ul>
+                        <ul className={styles.wandlist}>
                             <li>
                                 Wood:{' '}
                                 {found.wand.wood !== '' ? found.wand.wood : '-'}
@@ -115,9 +77,9 @@ const Individ = ({ data }) => {
                             </li>
                         </ul>
                     </div>
-                </Info>
-            </Wrapper>
-        </Container>
+                </div>
+            </div>
+        </div>
     );
 };
 
