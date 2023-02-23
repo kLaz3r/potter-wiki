@@ -1,7 +1,8 @@
 .main {
+    padding-top: 1rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 1200px;
+    grid-template-columns: repeat(6, 1fr);
     margin: 0 auto;
+    padding: 1rem 1rem;
     gap: 1rem;
 }

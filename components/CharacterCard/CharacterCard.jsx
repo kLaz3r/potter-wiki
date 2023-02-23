@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import placeholder from '../../assets/images.png';
-import styles from './CharacterCard.module.scss';
+import styles from './CharacterCard.module.css';
 
 const CharacterCard = ({ data }) => {
     return (

@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 5rem;
+    background-color: var(--dark-color);
+    border-bottom: 1px solid var(--accent-color);
+}
+.imagewrapper {
+    display: inline-block;
+    margin: 1rem;
+    margin-left: 2rem;
+    height: 3rem;
+    position: relative;
+    width: 10%;
+}
+.navItems {
+    height: 5rem;
+    padding: 0 2rem;
+}
+.navItemText {
+    height: 5rem;
+    line-height: 5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+}
+.navItem:hover .navItemText {
+    color: var(--accent-color);
+    border-bottom: 1px solid var(--light-color);
+}

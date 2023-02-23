@@ -1,0 +1,37 @@
+.hero {
+    width: 100vw;
+    height: calc(100vh - 5rem);
+    position: relative;
+}
+.imagewrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.herogradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, var(--darkest-color) 10%, transparent);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.heroh1 {
+    width: 40%;
+    text-align: start;
+    font-size: 3rem;
+    padding-left: 3rem;
+    color: var(--light-color);
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+.herop {
+    width: 40%;
+    text-align: start;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    color: var(--medium-color);
+    font-weight: lighter;
+}
