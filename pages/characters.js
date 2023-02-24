@@ -6,13 +6,18 @@ import Head from 'next/head';
 
 export default function Home({ data }) {
     return (
-        <Layout>
-            <main className={styles.main}>
-                {data.map((element) => (
-                    <CharacterCard data={element} key={element.id} />
-                ))}
-            </main>
-        </Layout>
+        <>
+            <Head>
+                <title>Harry Potter Wiki | Characters</title>
+            </Head>
+            <Layout>
+                <main className={styles.main}>
+                    {data.map((element) => (
+                        <CharacterCard data={element} key={element.id} />
+                    ))}
+                </main>
+            </Layout>
+        </>
     );
 }
 

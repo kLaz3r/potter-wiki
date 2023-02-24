@@ -14,7 +14,11 @@ const CharactersSection = ({ data }) => {
             </h1>
             <div className={styles.charactersContainer}>
                 {charactersShowed.map((element) => (
-                    <Link href={element.id} className={styles.characterBox}>
+                    <Link
+                        key={element.id}
+                        href={element.id}
+                        className={styles.characterBox}
+                    >
                         <div className={styles.imageWrapper}>
                             <Image
                                 className={styles.image}

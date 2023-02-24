@@ -4,7 +4,6 @@ export default function Document() {
     return (
         <Html lang='en'>
             <Head>
-                <title>Harry Potter Wiki</title>
                 <meta
                     name='description'
                     content='Wiki for all the characters and spells in Harry Potter by J.K Rowling'
