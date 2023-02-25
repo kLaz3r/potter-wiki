@@ -27,7 +27,7 @@ const CharactersSection = ({ data }) => {
                             />
                         </div>
                         <span className={styles.characterName}>
-                            {element.name}
+                            <p>{element.name}</p>
                         </span>
                     </Link>
                 ))}

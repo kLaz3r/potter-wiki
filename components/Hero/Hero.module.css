@@ -1,7 +1,9 @@
 .hero {
     width: 100vw;
+    margin-top: 5rem;
     height: calc(100vh - 5rem);
     position: relative;
+    border-bottom: 1px solid var(--accent-color);
 }
 .imagewrapper {
     position: absolute;
@@ -14,12 +16,12 @@
     height: 100%;
     background: linear-gradient(45deg, var(--darkest-color) 10%, transparent);
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 .heroh1 {
     width: 40%;
-    text-align: start;
+    text-align: flex-start;
     font-size: 3rem;
     padding-left: 3rem;
     color: var(--light-color);
@@ -28,10 +30,14 @@
 }
 .herop {
     width: 40%;
-    text-align: start;
+    text-align: flex-start;
     font-size: 1.4rem;
     padding-top: 1rem;
     padding-left: 3rem;
     color: var(--medium-color);
     font-weight: lighter;
 }
+/* .herotext {
+    max-width: 1400px;
+    margin: 0 auto;
+} */

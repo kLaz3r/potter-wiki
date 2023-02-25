@@ -1,6 +1,7 @@
 import CharactersSection from '@/components/CharactersSection/CharactersSection';
 import Hero from '@/components/Hero/Hero';
 import Layout from '@/components/Layout/Layout';
+import SpellsSection from '@/components/SpellsSection/SpellsSection';
 import axios from 'axios';
 import Head from 'next/head';
 import styles from '../styles/index.module.css';
@@ -14,6 +15,7 @@ export default function Home({ data }) {
             <Layout>
                 <Hero />
                 <CharactersSection data={data} />
+                <SpellsSection />
             </Layout>
         </>
     );

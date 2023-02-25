@@ -20,7 +20,9 @@ const CharacterCard = ({ data }) => {
                 )}
             </div>
             {data.name !== '' ? (
-                <span className={styles.name}>{data.name}</span>
+                <span className={styles.name}>
+                    <p>{data.name}</p>
+                </span>
             ) : (
                 <span className={styles.name}>-</span>
             )}

@@ -1,0 +1,58 @@
+.container {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 5rem);
+}
+.wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 5rem);
+    width: 100vw;
+    background: linear-gradient(225deg, var(--dark-color) 10%, transparent);
+    z-index: 100;
+}
+.spellsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 42%;
+    max-width: 700px;
+    padding-left: 2rem;
+}
+.headingContainer {
+    width: 50%;
+    max-width: 600px;
+    text-align: end;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.sectionTitle {
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: end;
+}
+.sectionDescription {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    padding-top: 2rem;
+    width: 70%;
+}
+.accentColor {
+    color: var(--accent-color);
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+.accentColor:hover {
+    color: var(--light-color);
+    border-bottom: 1px solid var(--accent-color);
+}
+.backgroundImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

@@ -12,9 +12,10 @@ export default function Home({ data }) {
             </Head>
             <Layout>
                 <main className={styles.main}>
-                    {data.map((element) => (
-                        <CharacterCard data={element} key={element.id} />
-                    ))}
+                    {data &&
+                        data.map((element) => (
+                            <CharacterCard data={element} key={element.id} />
+                        ))}
                 </main>
             </Layout>
         </>

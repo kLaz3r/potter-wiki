@@ -1,10 +1,14 @@
 .wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     width: 100vw;
     height: 5rem;
     background-color: var(--dark-color);
     border-bottom: 1px solid var(--accent-color);
+    z-index: 1000;
 }
 .imagewrapper {
     display: inline-block;

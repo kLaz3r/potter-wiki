@@ -6,10 +6,10 @@ import styles from './Navbar.module.css';
 
 const Navbar = () => {
     return (
-        <Link href='/' className={styles.wrapper}>
-            <div className={styles.imagewrapper}>
+        <div className={styles.wrapper}>
+            <Link href='/' className={styles.imagewrapper}>
                 <Image src={logo} fill></Image>
-            </div>
+            </Link>
             <div className={styles.navItems}>
                 <Link href='/' className={styles.navItem}>
                     <span className={styles.navItemText}>Home</span>
@@ -17,14 +17,14 @@ const Navbar = () => {
                 <Link href='characters' className={styles.navItem}>
                     <span className={styles.navItemText}>Characters</span>
                 </Link>
-                <Link href='/' className={styles.navItem}>
+                <Link href='/spells' className={styles.navItem}>
                     <span className={styles.navItemText}>Spells</span>
                 </Link>
                 <Link href='/' className={styles.navItem}>
                     <span className={styles.navItemText}>About</span>
                 </Link>
             </div>
-        </Link>
+        </div>
     );
 };
 
