@@ -1,6 +1,4 @@
 .hero {
-    width: 100vw;
-    margin-top: 5rem;
     height: calc(100vh - 5rem);
     position: relative;
     border-bottom: 1px solid var(--accent-color);
@@ -41,3 +39,16 @@
     max-width: 1400px;
     margin: 0 auto;
 } */
+
+@media (max-width: 500px) {
+    .heroh1 {
+        width: 100%;
+        text-align: start;
+        padding: 0 2rem;
+        font-size: 1.8rem;
+    }
+    .herop {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+}

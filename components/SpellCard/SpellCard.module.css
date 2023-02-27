@@ -26,3 +26,30 @@
     font-size: 1.3rem;
     padding-top: 1rem;
 }
+@media (max-width: 500px) {
+    .wrapperNormal {
+        display: block;
+        background-color: var(--dark-color);
+        padding: 0.5rem;
+    }
+    .wrapperTransparent {
+        display: block;
+        background-color: transparent;
+        padding: 0.5rem;
+        transition: all 0.3s ease;
+    }
+    .spellTitle {
+        color: var(--light-color);
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: lighter;
+        border-bottom: 1px solid var(--accent-color);
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .spellDescription {
+        color: var(--medium-color);
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+}

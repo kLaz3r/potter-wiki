@@ -4,5 +4,10 @@
     margin: 0 auto;
     padding: 1rem 1rem;
     gap: 1rem;
-    margin-top: 5rem;
+}
+
+@media (max-width: 500px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

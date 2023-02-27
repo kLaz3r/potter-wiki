@@ -3,5 +3,9 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 1rem;
-    margin-top: 5rem;
+}
+@media (max-width: 500px) {
+    .spellsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

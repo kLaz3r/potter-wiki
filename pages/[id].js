@@ -23,79 +23,145 @@ const Individ = ({ data }) => {
                         </div>
                         <div className={styles.info}>
                             <div className={styles.slice}>
-                                Name: {found.name !== '' ? found.name : '-'}
+                                <span className={styles.sliceName}>Name:</span>{' '}
+                                <span className={styles.sliceValue}>
+                                    {found.name !== '' ? found.name : '-'}
+                                </span>
                             </div>
                             <div className={styles.slice}>
-                                Actor: {found.actor !== '' ? found.actor : '-'}
+                                <span className={styles.sliceName}>Actor:</span>{' '}
+                                <span className={styles.sliceValue}>
+                                    {found.actor !== '' ? found.actor : '-'}
+                                </span>
                             </div>
                             <div className={styles.slice}>
-                                Ancestry:{' '}
-                                {found.ancestry !== '' ? found.ancestry : '-'}
+                                <span className={styles.sliceName}>
+                                    Ancestry:
+                                </span>{' '}
+                                <span className={styles.sliceValue}>
+                                    {found.ancestry !== ''
+                                        ? found.ancestry
+                                        : '-'}
+                                </span>
                             </div>
                             <div className={styles.slice}>
-                                Date Of Birth:{' '}
-                                {found.dateOfBirth !== ''
-                                    ? found.dateOfBirth
-                                    : '-'}
+                                <span className={styles.sliceName}>
+                                    Date of Birth:
+                                </span>{' '}
+                                <span className={styles.sliceValue}>
+                                    {found.dateOfBirth !== null
+                                        ? found.dateOfBirth
+                                        : '-'}
+                                </span>
                             </div>
                             <div className={styles.slice}>
-                                Eye Colour:{' '}
-                                {found.eyeColour !== '' ? found.eyeColour : '-'}
+                                <span className={styles.sliceName}>
+                                    Eye Colour:
+                                </span>{' '}
+                                <span className={styles.sliceValue}>
+                                    {found.eyeColour !== ''
+                                        ? found.eyeColour
+                                        : '-'}
+                                </span>
                             </div>
                             <div className={styles.slice}>
-                                Gender:{' '}
-                                {found.gender !== '' ? found.gender : '-'}
+                                <span className={styles.sliceName}>
+                                    Gender:
+                                </span>{' '}
+                                <span className={styles.sliceValue}>
+                                    {found.gender !== '' ? found.gender : '-'}
+                                </span>
                             </div>
                             <div className={styles.slice}>
-                                Hair Colour:{' '}
-                                {found.hairColour !== ''
-                                    ? found.hairColour
-                                    : '-'}
+                                <span className={styles.sliceName}>
+                                    Hair Colour:
+                                </span>{' '}
+                                <span className={styles.sliceValue}>
+                                    {found.hairColour !== ''
+                                        ? found.hairColour
+                                        : '-'}
+                                </span>
                             </div>
                             <div className={styles.slice}>
-                                Hogwarts Staff:{' '}
-                                {found.hogwartsStaff ? 'Yes' : 'No'}
+                                <span className={styles.sliceName}>
+                                    Hogwarts Staff:
+                                </span>{' '}
+                                <span className={styles.sliceValue}>
+                                    {found.hogwartsStaff ? 'Yes' : 'No'}
+                                </span>
                             </div>
                             <div className={styles.slice}>
-                                Hogwarts Student:{' '}
-                                {found.hogwartsStudent ? 'Yes' : 'No'}
+                                <span className={styles.sliceName}>
+                                    Hogwarts Student:
+                                </span>{' '}
+                                <span className={styles.sliceValue}>
+                                    {found.hogwartsStudent ? 'Yes' : 'No'}
+                                </span>
                             </div>
                             <div className={styles.slice}>
-                                House: {found.house !== '' ? found.house : '-'}
+                                <span className={styles.sliceName}>House:</span>{' '}
+                                <span className={styles.sliceValue}>
+                                    {found.house !== '' ? found.house : '-'}
+                                </span>
                             </div>
                             <div className={styles.slice}>
-                                Patronous:{' '}
-                                {found.patronous !== '' ? found.patronous : '-'}
+                                <span className={styles.sliceName}>
+                                    Patronus:
+                                </span>{' '}
+                                <span className={styles.sliceValue}>
+                                    {found.patronus !== ''
+                                        ? found.patronus
+                                        : '-'}
+                                </span>
                             </div>
                             <div className={styles.slice}>
-                                Species:{' '}
-                                {found.species !== '' ? found.species : '-'}
+                                <span className={styles.sliceName}>
+                                    Species:
+                                </span>{' '}
+                                <span className={styles.sliceValue}>
+                                    {found.species !== '' ? found.species : '-'}
+                                </span>
                             </div>
                             <div className={styles.slice}>
-                                Wizard: {found.wizard ? 'Yes' : 'No'}
+                                <span className={styles.sliceName}>
+                                    Wizard:
+                                </span>{' '}
+                                <span className={styles.sliceValue}>
+                                    {found.wizard ? 'Yes' : 'Nos'}
+                                </span>
                             </div>
                             <div className={styles.slice}>
-                                Wand:
-                                <ul className={styles.wandlist}>
-                                    <li>
-                                        Wood:{' '}
-                                        {found.wand.wood !== ''
-                                            ? found.wand.wood
-                                            : '-'}
-                                    </li>
-                                    <li>
-                                        Core:{' '}
-                                        {found.wand.core !== ''
-                                            ? found.wand.core
-                                            : '-'}
-                                    </li>
-                                    <li>
-                                        Length:{' '}
-                                        {found.wand.length !== ''
-                                            ? found.wand.length
-                                            : '-'}
-                                    </li>
-                                </ul>
+                                <span className={styles.sliceName}>
+                                    Wand Wood:
+                                </span>{' '}
+                                <span className={styles.sliceValue}>
+                                    {found.wand.wood === '' ||
+                                    found.wand.wood === null
+                                        ? '-'
+                                        : found.wand.wood}
+                                </span>
+                            </div>
+                            <div className={styles.slice}>
+                                <span className={styles.sliceName}>
+                                    Wand Core:
+                                </span>{' '}
+                                <span className={styles.sliceValue}>
+                                    {found.wand.core === '' ||
+                                    found.wand.core === null
+                                        ? '-'
+                                        : found.wand.core}
+                                </span>
+                            </div>
+                            <div className={styles.slice}>
+                                <span className={styles.sliceName}>
+                                    Wand Length:
+                                </span>{' '}
+                                <span className={styles.sliceValue}>
+                                    {found.wand.length === '' ||
+                                    found.wand.length === null
+                                        ? '-'
+                                        : found.wand.length}
+                                </span>
                             </div>
                         </div>
                     </div>

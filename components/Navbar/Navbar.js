@@ -1,16 +1,41 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
+import hamburger from '../../assets/hamburger.png';
 import logo from '../../assets/logo.png';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
+    const [isMenuOpen, setMenuOpen] = useState(false);
     return (
-        <div className={styles.wrapper}>
-            <Link href='/' className={styles.imagewrapper}>
+        <div
+            className={`${isMenuOpen ? styles.wrapperMenuOpen : ''} ${
+                styles.wrapper
+            } `}
+        >
+            <Link
+                href='/'
+                className={`${isMenuOpen ? styles.imagewrapperMenuOpen : ''} ${
+                    styles.imagewrapper
+                } `}
+            >
                 <Image src={logo} fill></Image>
             </Link>
-            <div className={styles.navItems}>
+            <div
+                className={`${styles.hamburgerMenu} ${
+                    isMenuOpen ? styles.hamburgerMenuOpen : ''
+                }`}
+                onClick={() => setMenuOpen(!isMenuOpen)}
+            >
+                <p>
+                    <Image src={hamburger}></Image>
+                </p>
+            </div>
+            <div
+                className={`${isMenuOpen ? styles.navItemsMenuOpen : ''} ${
+                    styles.navItems
+                } `}
+            >
                 <Link href='/' className={styles.navItem}>
                     <span className={styles.navItemText}>Home</span>
                 </Link>
