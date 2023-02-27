@@ -26,11 +26,19 @@
     font-size: 1.3rem;
     padding-top: 1rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
+    .spellTitle {
+        font-size: 1.5rem;
+    }
+    .spellDescription {
+        color: var(--medium-color);
+        font-size: 1rem;
+    }
+}
+@media (max-width: 750px) {
     .wrapperNormal {
         display: block;
         background-color: var(--dark-color);
-        padding: 0.5rem;
     }
     .wrapperTransparent {
         display: block;
@@ -44,12 +52,10 @@
         text-align: center;
         font-weight: lighter;
         border-bottom: 1px solid var(--accent-color);
-        padding-bottom: 1rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .spellDescription {
         color: var(--medium-color);
         font-size: 1rem;
-        padding-top: 1rem;
     }
 }

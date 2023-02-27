@@ -40,6 +40,22 @@
     margin: 0 auto;
 } */
 
+@media (max-width: 1000px) {
+    .heroh1 {
+        width: 60%;
+    }
+    .herop {
+        width: 60%;
+    }
+}
+@media (max-width: 650px) {
+    .heroh1 {
+        width: 80%;
+    }
+    .herop {
+        width: 80%;
+    }
+}
 @media (max-width: 500px) {
     .heroh1 {
         width: 100%;

@@ -32,6 +32,9 @@
 .characterBox {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--dark-color);
     /* border-radius: 7px; */
 }
@@ -46,9 +49,14 @@
 .characterBox:hover .imageWrapper {
     height: 82%;
 }
+.characterBox:hover .characterName {
+    height: 18%;
+}
 .characterName {
+    transition: all 0.3s ease;
     text-align: center;
     width: 100%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +77,79 @@
     color: var(--accent-color);
     border-bottom: 1px solid var(--light-color);
 }
-@media (max-width: 500px) {
+@media (max-width: 1241px) {
+    .characterName {
+        font-size: 1.7rem;
+    }
+
+    .characterBox:hover .characterName {
+        font-size: 1.8rem;
+        height: 20%;
+    }
+    .characterBox:hover .imageWrapper {
+        height: 80%;
+    }
+}
+@media (max-width: 1097px) {
+    .characterName {
+        font-size: 1.5rem;
+    }
+    .sectionTitle {
+        width: 60%;
+    }
+    .characterBox:hover .characterName {
+        height: 20%;
+    }
+    .characterBox:hover .characterName p {
+        font-size: 1.8rem;
+    }
+    .characterBox:hover .imageWrapper {
+        height: 80%;
+    }
+}
+@media (max-width: 950px) {
+    .characterName {
+        font-size: 1.3rem;
+        height: 10%;
+    }
+    .sectionTitle {
+        width: 70%;
+    }
+    .imageWrapper {
+        height: 90%;
+    }
+    .characterBox:hover .characterName {
+        height: 15%;
+    }
+    .characterBox:hover .characterName p {
+        font-size: 1.6rem;
+    }
+    .characterBox:hover .imageWrapper {
+        height: 85%;
+    }
+}
+@media (max-width: 900px) {
+    .characterName {
+        font-size: 1rem;
+        height: 7%;
+    }
+    .sectionTitle {
+        width: 80%;
+    }
+    .imageWrapper {
+        height: 93%;
+    }
+    .characterBox:hover .characterName {
+        height: 10%;
+    }
+    .characterBox:hover .characterName p {
+        font-size: 1.4rem;
+    }
+    .characterBox:hover .imageWrapper {
+        height: 90%;
+    }
+}
+@media (max-width: 730px) {
     .charactersContainer {
         display: flex;
         width: 100%;
@@ -108,7 +188,7 @@
         border-bottom: 1px solid transparent;
     }
     .imageWrapper {
-        height: 13rem;
+        height: 14rem;
     }
     .characterBox:hover .characterName p {
         color: var(--accent-color);
