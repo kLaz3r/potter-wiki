@@ -18,7 +18,11 @@ const Individ = ({ data }) => {
                 <div className={styles.container}>
                     <div className={styles.wrapper}>
                         <div className={styles.imagewrapper}>
-                            <Image src={found.image} fill></Image>
+                            <Image
+                                src={found.image}
+                                fill
+                                alt={found.name}
+                            ></Image>
                         </div>
                         <div className={styles.info}>
                             <div className={styles.slice}>

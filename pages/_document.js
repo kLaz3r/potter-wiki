@@ -5,6 +5,10 @@ export default function Document() {
         <Html lang='en'>
             <Head>
                 <meta
+                    http-equiv='Content-Security-Policy'
+                    content='default-src https:'
+                />
+                <meta
                     name='description'
                     content='Wiki for all the characters and spells in Harry Potter by J.K Rowling'
                 />

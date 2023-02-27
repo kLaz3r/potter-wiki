@@ -21,7 +21,7 @@ const CharacterCard = ({ data }) => {
             </div>
             {data.name !== '' ? (
                 <span className={styles.name}>
-                    <p>{data.name}</p>
+                    <span>{data.name}</span>
                 </span>
             ) : (
                 <span className={styles.name}>-</span>

@@ -11,12 +11,12 @@ export default function Home({ data }) {
                 <title>Harry Potter Wiki | Characters</title>
             </Head>
             <Layout>
-                <main className={styles.main}>
+                <div className={styles.main}>
                     {data &&
                         data.map((element) => (
                             <CharacterCard data={element} key={element.id} />
                         ))}
-                </main>
+                </div>
             </Layout>
         </>
     );

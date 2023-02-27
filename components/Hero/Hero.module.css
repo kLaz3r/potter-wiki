@@ -19,7 +19,7 @@
 }
 .heroh1 {
     width: 40%;
-    text-align: flex-start;
+    text-align: start;
     font-size: 3rem;
     padding-left: 3rem;
     color: var(--light-color);
@@ -28,7 +28,7 @@
 }
 .herop {
     width: 40%;
-    text-align: flex-start;
+    text-align: start;
     font-size: 1.4rem;
     padding-top: 1rem;
     padding-left: 3rem;
