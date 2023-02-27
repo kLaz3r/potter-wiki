@@ -5,7 +5,6 @@ import styles from './CharactersSection.module.css';
 
 const CharactersSection = ({ data }) => {
     const charactersShowed = data.slice(0, 4);
-    console.log(charactersShowed);
     return (
         <div className={styles.sectionWrapper}>
             <h1 className={styles.sectionTitle}>

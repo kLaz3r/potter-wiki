@@ -5,7 +5,6 @@ import Head from 'next/head';
 import styles from '../styles/spells.module.css';
 
 export default function Spells({ data }) {
-    console.log(data);
     return (
         <>
             <Head>

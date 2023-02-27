@@ -9,7 +9,6 @@ const Individ = ({ data }) => {
     const router = useRouter();
     const { id } = router.query;
     const found = data && data.find((element) => element.id === id);
-    console.log(found);
     return (
         <>
             <Head>
