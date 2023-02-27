@@ -21,6 +21,7 @@ const CharactersSection = ({ data }) => {
                     >
                         <div className={styles.imageWrapper}>
                             <Image
+                                alt={element.name}
                                 className={styles.image}
                                 src={element.image}
                                 fill
@@ -33,10 +34,11 @@ const CharactersSection = ({ data }) => {
                 ))}
             </div>
             <p className={styles.moreText}>
-                And many
                 <Link href='/characters'>
                     {' '}
-                    <span className={styles.moreLink}>MORE</span>
+                    <span className={styles.moreLink}>
+                        And many more characters
+                    </span>
                 </Link>
             </p>
         </div>

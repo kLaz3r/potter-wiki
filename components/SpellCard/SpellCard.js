@@ -7,8 +7,8 @@ const SpellCard = ({ data, isTransparent }) => {
         : styles.wrapperNormal;
     return (
         <div className={wrapperStyle}>
-            <h1 className={styles.spellTitle}>{data.name}</h1>
-            <h6 className={styles.spellDescription}>{data.description}</h6>
+            <p className={styles.spellTitle}>{data.name}</p>
+            <p className={styles.spellDescription}>{data.description}</p>
         </div>
     );
 };

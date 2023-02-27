@@ -7,7 +7,12 @@ const Hero = () => {
     return (
         <div className={styles.hero}>
             <div className={styles.imagewrapper}>
-                <Image src={hogwarts} fill priority></Image>
+                <Image
+                    src={hogwarts}
+                    fill
+                    priority
+                    alt='Hero Section Background Image'
+                ></Image>
             </div>
             <div className={styles.herogradient}>
                 <div className={styles.herotext}>

@@ -19,7 +19,8 @@ const Navbar = () => {
                     styles.imagewrapper
                 } `}
             >
-                <Image src={logo} fill></Image>
+                <Image src={logo} alt='Logo' fill></Image>
+                Logo
             </Link>
             <div
                 className={`${styles.hamburgerMenu} ${
@@ -28,7 +29,7 @@ const Navbar = () => {
                 onClick={() => setMenuOpen(!isMenuOpen)}
             >
                 <p>
-                    <Image src={hamburger}></Image>
+                    <Image src={hamburger} alt='Menu'></Image>
                 </p>
             </div>
             <div

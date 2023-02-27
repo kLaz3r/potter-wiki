@@ -36,6 +36,7 @@ const SpellsSection = () => {
     return (
         <div className={styles.container}>
             <Image
+                alt='Spells Section Background Image'
                 fill
                 src={spellsImg}
                 className={styles.backgroundImage}
@@ -59,12 +60,7 @@ const SpellsSection = () => {
                         From Wingardium Leviosa to Expelliarmus, explore the
                         spells that have captivated fans for generations and
                         harness the power of magic like never before. Click on
-                        the spells to
-                        <Link href='/spells' className={styles.accentColor}>
-                            {' '}
-                            learn more
-                        </Link>
-                        .
+                        the spells to learn more.
                     </h2>
                 </div>
             </div>

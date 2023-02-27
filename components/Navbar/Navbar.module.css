@@ -17,6 +17,7 @@
     position: relative;
     width: 4rem;
     transition: all 0.3s ease;
+    font-size: 0rem;
 }
 .imagewrapper img {
     object-fit: contain;
