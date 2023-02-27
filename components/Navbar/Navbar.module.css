@@ -65,16 +65,16 @@
         brightness(96%) contrast(92%) !important;
 }
 .wrapperMenuOpen {
-    height: 13rem !important;
-    transition: all 0.3s ease;
+    height: 11rem !important;
+    transition: all 0.5s ease;
     flex-direction: row-reverse !important;
 }
 .imagewrapperMenuOpen {
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     display: none !important;
 }
 .navItemsMenuOpen {
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     display: block !important;
     position: relative !important;
     top: 0 !important;

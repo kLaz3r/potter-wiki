@@ -46,9 +46,9 @@ const Navbar = () => {
                 <Link href='/spells' className={styles.navItem}>
                     <span className={styles.navItemText}>Spells</span>
                 </Link>
-                <Link href='/' className={styles.navItem}>
+                {/* <Link href='/' className={styles.navItem}>
                     <span className={styles.navItemText}>About</span>
-                </Link>
+                </Link> */}
             </div>
         </div>
     );

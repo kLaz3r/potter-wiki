@@ -13,16 +13,16 @@ const CharacterCard = ({ data }) => {
                         src={data.image}
                         className={styles.image}
                         fill
-                        alt='Harry Potter'
+                        alt={data.name}
                     ></Image>
                 ) : (
-                    <Image src={placeholder} fill alt='Harry Potter' />
+                    <Image src={placeholder} fill alt={data.name} />
                 )}
             </div>
             {data.name !== '' ? (
-                <span className={styles.name}>
+                <p className={styles.name}>
                     <span>{data.name}</span>
-                </span>
+                </p>
             ) : (
                 <span className={styles.name}>-</span>
             )}

@@ -4,7 +4,7 @@ import styles from '@/styles/characters.module.css';
 import axios from 'axios';
 import Head from 'next/head';
 
-export default function Home({ data }) {
+export default function Characters({ data }) {
     return (
         <>
             <Head>
