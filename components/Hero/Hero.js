@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <div className={styles.hero}>
             <div className={styles.imagewrapper}>
-                <Image src={hogwarts} fill></Image>
+                <Image src={hogwarts} fill priority></Image>
             </div>
             <div className={styles.herogradient}>
                 <div className={styles.herotext}>
