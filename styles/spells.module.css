@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 1rem;
+    border-bottom: 1px solid var(--accent-color);
 }
 @media (max-width: 1711px) {
     .spellsContainer {

@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import React, { useRef } from 'react';
-import hogwarts from '../../assets/hogwarts.jpg';
-import styles from './Hero.module.css';
+import Image from "next/image";
+import React, { useRef } from "react";
+import hogwarts from "../../assets/hogwarts.jpg";
+import styles from "./Hero.module.css";
 
 const Hero = () => {
     return (
@@ -11,7 +11,7 @@ const Hero = () => {
                     src={hogwarts}
                     fill
                     priority
-                    alt='Hero Section Background Image'
+                    alt="Hero Section Background Image"
                 ></Image>
             </div>
             <div className={styles.herogradient}>

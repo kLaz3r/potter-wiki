@@ -2,6 +2,7 @@
     height: calc(100vh - 5rem);
     position: relative;
     border-bottom: 1px solid var(--accent-color);
+    scroll-snap-align: start;
 }
 .imagewrapper {
     position: absolute;

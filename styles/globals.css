@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 :root {
     --light-color: #fffcf2;
     --medium-color: #ccc5b9;
@@ -10,7 +14,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Crimson Text', serif;
+    font-family: "Crimson Text", serif;
 }
 img {
     object-fit: cover;
@@ -18,7 +22,7 @@ img {
 
 html,
 body {
-    font-family: 'Crimson Text', serif;
+    font-family: "Crimson Text", serif;
     background-color: var(--darkest-color);
     color: var(--light-color);
 }

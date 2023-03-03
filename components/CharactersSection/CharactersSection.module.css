@@ -5,6 +5,7 @@
     justify-content: space-evenly;
     align-items: center;
     border-bottom: 1px solid var(--accent-color);
+    scroll-snap-align: start;
 }
 .sectionTitle {
     text-align: center;

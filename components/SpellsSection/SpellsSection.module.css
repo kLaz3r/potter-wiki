@@ -12,6 +12,8 @@
     height: calc(100vh - 5rem);
     background: linear-gradient(225deg, var(--dark-color) 10%, transparent);
     z-index: 100;
+    border-bottom: 1px solid var(--accent-color);
+    scroll-snap-align: center;
 }
 .spellsContainer {
     display: grid;
