@@ -1,10 +1,20 @@
-import Layout from '@/components/Layout/Layout';
-import SpellCard from '@/components/SpellCard/SpellCard';
-import axios from 'axios';
-import Head from 'next/head';
-import styles from '../styles/spells.module.css';
+import axios from "axios";
+import Head from "next/head";
+import Layout from "src/components/Layout/Layout";
+import SpellCard from "src/components/SpellCard/SpellCard";
+import styles from "../styles/spells.module.css";
 
-export default function Spells({ data }) {
+type Spell = {
+    id: string;
+    description: string;
+    name: string;
+};
+
+type Props = {
+    data: Spell[];
+};
+
+export default function Spells({ data }: Props) {
     return (
         <>
             <Head>
@@ -25,10 +35,14 @@ export default function Spells({ data }) {
     );
 }
 
+type SpellResponse = {
+    data: Spell[];
+};
+
 export async function getStaticProps() {
-    const data = await axios
-        .get('https://hp-api.onrender.com/api/spells')
-        .then((res) => res.data);
+    const { data }: SpellResponse = await axios.get(
+        "https://hp-api.onrender.com/api/spells"
+    );
 
     return {
         props: { data },

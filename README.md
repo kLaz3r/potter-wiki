@@ -1,4 +1,4 @@
-# Harry Potter Wiki | Next.js
+# Harry Potter Wiki | Next.js & TypeScript
 
 Displays characters and spells from API: https://hp-api.herokuapp.com/
 
