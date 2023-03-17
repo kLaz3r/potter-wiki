@@ -37,9 +37,6 @@ const Navbar = () => {
                     styles.navItems
                 } `}
             >
-                <Link href="/" className={styles.navItem}>
-                    <span className={styles.navItemText}>Home</span>
-                </Link>
                 <Link href="characters" className={styles.navItem}>
                     <span className={styles.navItemText}>Characters</span>
                 </Link>

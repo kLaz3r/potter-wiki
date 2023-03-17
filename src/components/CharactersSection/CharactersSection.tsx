@@ -53,9 +53,9 @@ const CharactersSection = ({ data }: Props) => {
                                 fill
                             />
                         </div>
-                        <span className={styles.characterName}>
-                            <p>{element.name}</p>
-                        </span>
+                        <h1 className={styles.characterName}>
+                            <span>{element.name}</span>
+                        </h1>
                     </Link>
                 ))}
             </div>
