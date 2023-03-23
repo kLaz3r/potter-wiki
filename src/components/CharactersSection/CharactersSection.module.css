@@ -203,3 +203,11 @@
         height: 14rem;
     }
 }
+@media (max-width: 500px) {
+    .sectionTitle {
+        font-size: 1.5rem;
+    }
+    .moreLink {
+        font-size: 1.5rem;
+    }
+}

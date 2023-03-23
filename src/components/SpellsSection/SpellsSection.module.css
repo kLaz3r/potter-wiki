@@ -92,3 +92,12 @@
         width: 100%;
     }
 }
+
+@media (max-width: 500px) {
+    .sectionTitle {
+        font-size: 1.5rem;
+    }
+    .sectionDescription {
+        font-size: 1rem;
+    }
+}
