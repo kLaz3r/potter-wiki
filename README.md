@@ -2,4 +2,4 @@
 
 Displays characters and spells from API: https://hp-api.herokuapp.com/
 
-Deployed on Netlify at: https://harrypotter-wiki.netlify.app/
+Deployed on Vercel at: https://potter-wiki-five.vercel.app/
