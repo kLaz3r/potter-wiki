@@ -41,7 +41,7 @@ const Footer = () => {
                 </Link>
                 <Link
                     className="text-[0px]"
-                    href="https://stefan-nasturas.netlify.app/"
+                    href="https://stefannasturas.live/"
                 >
                     Personal Portfolio
                     <PersonIcon className="h-full w-full text-light hover:text-accent active:text-accent transition-all" />
